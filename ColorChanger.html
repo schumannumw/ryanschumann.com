@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Color me random</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    </head>
+ <body>
+    <style>
+    .button{
+    height: 20px;
+    width: 295px;
+    border: solid gray;
+    background-color: lightgray;
+    box-shadow: 10px 10px 10px darkgray;
+        cursor: pointer;
+    }  
+    .addButton{
+    height: 20px;
+    width: 20px;
+    border: solid gray;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px darkgray;
+    display: inline-block;
+        cursor: pointer;
+    }  
+    .minusButton{
+    height: 20px;
+    width: 20px;
+    border: solid gray;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px darkgray;
+    display: inline-block;
+        cursor: pointer;
+        margin: 0 5px 5px 0;
+        
+       
+    }  
+    #box {
+    width: 300px;
+    height: 100px;
+    }
+     </style>
+    <div class="button" onclick="colorFunction()">&nbsp;Click To Randomize</div>
+     <div id="box"></div>
+     <div class="addButton" onclick="addColorFunction()">&nbsp;+</div>
+     <div class="minusButton" onclick="minusColorFunction()">&nbsp;&nbsp;-</div>
+     <div id="rvalue"></div>
+     <div id="gvalue"></div>
+     <div id="bvalue"></div>
+     
+    <script>
+        //addColorFunctionGlobal
+        r = Math.floor(Math.random() * 255);
+        g = Math.floor(Math.random() * 255);
+        b = Math.floor(Math.random() * 255);
+        
+        function colorFunction(){
+            r = Math.floor(Math.random() * 255);
+            g = Math.floor(Math.random() * 255);
+            b = Math.floor(Math.random() * 255);
+             document.getElementById("box").style.background="rgb("+r+","+g+","+b+")";
+            updateContent();
+        }
+        
+            function addColorFunction(){
+                    addr = r + 10;
+                    addg = g + 10;
+                    addb = b + 10;
+                    r = addr;
+                    g = addg;
+                    b = addb;
+            document.getElementById("box").style.background="rgb("+addr+","+addg+","+addb+")";
+            updateContent();
+            }
+        
+            function minusColorFunction(){
+                minusr = r -10;
+                minusg = g -10;
+                minusb = b -10;
+    document.getElementById("box").style.background="rgb("+minusr+","+minusg+","+minusb+")";
+                r = minusr;
+                g = minusg;
+                b = minusb; document.getElementById("box").style.background="rgb("+minusr+","+minusg+","+minusb+")";
+                updateContent();
+            }
+        
+        function updateContent(){
+        if(r <= 0){r = 0;}
+        if(g <= 0){g = 0;}
+        if(b <= 0){b = 0;}
+        if(r >= 255){r = 255;}
+        if(g >= 255){g = 255;}
+        if(b >= 255){b = 255;}
+        document.getElementById("rvalue").innerHTML="Red: " + r;
+        document.getElementById("gvalue").innerHTML="Green: "+ g;
+        document.getElementById("bvalue").innerHTML="Blue: " + b;
+        }
+        document.getElementById("box").style.background="rgb("+r+","+g+","+b+")";
+        updateContent();
+     </script>
+    </body>
+</html>

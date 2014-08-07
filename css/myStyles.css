@@ -1,0 +1,599 @@
+/*************************************
+*               Colors
+*
+* Main Navigation: #011323
+* Navigation-active: #249E6D
+* Header: #093C66
+* Sub-Header: #249E6D
+* Footer: #011323
+* 
+**************************************/
+
+/*************************************
+*               NAVIGATION
+**************************************/
+.jumboNav {
+    display:inline-block;
+    float: left;
+    margin-top: -50px;
+    text-align:center;
+    font-size: 1.5em;
+    color: white;
+    background-color: #011323;
+    height: auto;
+    min-height: 50px;
+    padding-top: 11px;
+    overflow: hidden;
+}
+.jumboNav a{
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.jumboHome a{
+color: red;
+}
+
+.gliphColor{
+color: #249E6D;
+}
+.navbar.navbar-default.navbar-fixed-top{
+background: #011323;
+height: 52px;
+}
+.navbar-default .navbar-nav>li>a{
+color: white;
+}
+.navbar-default .navbar-brand{
+color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+color: white;
+}
+/*text font size*/
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+font-size: 1.2em;
+}
+/*small upper right hand box*/
+/*bars in box*/
+.navbar-default .navbar-toggle .icon-bar{
+background-color: white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #011323;  
+    
+}
+/* Active navigation on hover active*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+    background-color: #011323;
+      color:white;
+    font-size:1.2em;
+    margin-top: -3px;
+    }
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+color: white;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+background-color: #011323;
+}
+/*nav one
+-webkit-transform: scale(1) rotate(-90deg) translate(0px);
+*/
+.glyphArrow {
+display: inline-block;
+}
+.glyphArrow a:hover{
+position: relative;
+}
+.glyphArrow a:hover:after{
+    content:"\e078";
+    font-family:"Glyphicons Halflings";
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    left: 45%;
+    color: white;
+    font-size: 1.2em;
+}
+
+/*Fixed nav*/
+.activeToggle a:hover {
+    position: relative;
+    overflow: hidden;
+}
+.activeToggle a:hover:after {
+    content:"\e078";
+    font-family:"Glyphicons Halflings";
+    display: block;
+    position: absolute;
+    bottom: -9px;
+    left: 45%;
+    color: white;
+    font-size: 1.2em;
+}
+
+.activeToggle.active a:hover{
+position: relative;
+}
+.activeToggle.active a:hover:after{
+    content:"\e078";
+    font-family:"Glyphicons Halflings";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 45%;
+    color: #249E6D;
+    font-size: 1em;
+}
+
+/*Navigation collapsed align arrow to the left*/
+@media (max-width: 768px) {
+/*Fixed nav*/
+.activeToggle a:hover {
+    position: relative;
+    overflow: visible;
+}
+.activeToggle a:hover:after {
+    content:"\e080";
+    font-family:"Glyphicons Halflings";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    color: white;
+    font-size: 1em;
+}
+
+.activeToggle.active a:hover:after{
+    content:"\e080";
+    font-family:"Glyphicons Halflings";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    color: #249E6D;
+    font-size: 1em;
+}
+.glyphArrow a:hover{
+    color: #249E6D;
+}
+.glyphArrow a:hover:after{
+    content:"";
+}
+.navbar-nav{
+    margin-left: 12px;
+    }
+}/*end of mediaquery*/
+
+/*************************************
+*               JUMBOTRON
+**************************************/
+.jumbotron{
+/*        padding-top: 100px;*/
+        height: 350px;
+        margin-bottom: 0px;
+        background:transparent;
+/*        background: url('http://placehold.it/350x150');*/
+        background-size: cover;
+/*        background-repeat: no-repeat;*/
+/*        background-position:center center;*/
+      }
+ .bg {
+background: url('../images/SeamlessChalkBoardDeeper.jpg') repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -2;
+} 
+ .bg2 {
+background: url('../images/BGTransparent.png') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}  
+
+/*************************************
+*               BODY
+**************************************/
+/*To make sure there is no horizontal scrolling*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.container-fluid{
+padding-left: 15%;
+padding-right: 15%;
+}
+
+.ulSection > li{
+    list-style-type: none;
+    padding-bottom: 3px;
+    margin-left: -20px;
+}
+
+/*Resume iframe Temporary Fix*/
+    #resumeFrame{
+    width: 100%;
+    height: 80em;
+    }
+	/* Custom, iPhone Retina */ 
+	@media only screen and (min-width : 320px) {
+        #resumeFrame{
+        height: 32em;
+        }	
+	}
+	@media only screen and (min-width : 410px) {
+        #resumeFrame{
+        height: 36em;
+        }	
+	}
+	@media only screen and (min-width : 453px) {
+        #resumeFrame{
+        height: 39em;
+        }	
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (min-width : 480px) {
+        #resumeFrame{
+        height: 45em;
+        }	
+	}
+	@media only screen and (min-width : 550px) {
+        #resumeFrame{
+        height: 50em;
+        }	
+	}
+	@media only screen and (min-width : 608px) {
+        #resumeFrame{
+        height: 55em;
+        }	
+	}
+	@media only screen and (min-width : 660px) {
+        #resumeFrame{
+        height: 60em;
+        }	
+	}
+	@media only screen and (min-width : 715px) {
+        #resumeFrame{
+        height: 65em;
+        }	
+	}
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px) {
+        #resumeFrame{
+        height: 50em;
+        }	
+	}
+    	@media only screen and (min-width : 816px) {
+        #resumeFrame{
+        height: 55em;
+        }	
+	}
+        @media only screen and (min-width : 893px) {
+        #resumeFrame{
+        height: 61em;
+        }	
+	}
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px) {
+        #resumeFrame{
+        height: 65em;
+        }	
+	}
+	@media only screen and (min-width : 1047px) {
+        #resumeFrame{
+        height: 70em;
+        }	
+	}
+    	@media only screen and (min-width : 1126px) {
+        #resumeFrame{
+        height: 75em;
+        }	
+	}
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px) {
+        #resumeFrame{
+        height: 56em;
+        }	
+	}
+    	@media only screen and (min-width : 1244px) {
+        #resumeFrame{
+        height: 60em;
+        }	
+	}
+    	@media only screen and (min-width : 1345px) {
+        #resumeFrame{
+        height: 65em;
+        }	
+	}
+    	@media only screen and (min-width : 1463px) {
+        #resumeFrame{
+        height: 70em;
+        }	
+	}
+    	@media only screen and (min-width : 1566px) {
+        #resumeFrame{
+        height: 80em;
+        }	
+	}/* end Resume iframe Temporary Fix*/
+
+@media (max-width: 768px){
+    .bg{
+    display: none;
+    }
+    .bg2{
+    display: none;
+    }
+    .jumbotron{
+    display: none;
+    }
+    .smallJumbotron{
+     background: url('../images/BGSmall.png') no-repeat center center;
+        width: 100%;
+        height: 333px;
+     }  
+    .smallJumbotronBG{
+     background: url('../images/SeamlessChalkBoardDeeper.jpg') repeat center center;
+        width: 100%;
+        height: 385px;
+     } 
+}
+
+@media (max-width: 768px){
+    .container-fluid{
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container-fluid{
+    padding-left: 25%;
+    padding-right: 25%;
+    }
+}
+
+#developmentbg {
+    background-color: white;
+}
+#designbg{
+    background-color: #cccccc;
+}
+
+#resumebg{
+    background-color: #cccccc;
+    margin-bottom: -55px;
+    padding-bottom: 55px;
+}
+.active a{
+    color: #249E6D !important;
+}
+.activeToggle{
+    display: inline-block;
+}
+  .scroll-adjust{
+    padding-top:50px;
+    margin-top:-50px;
+}
+button#cboxClose {
+    outline: none;
+}
+a.iframe.cboxElement {
+    outline: none;
+}
+/*border around images*/
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+    border-color: #249E6D;
+}
+
+/*            ColorBox               */
+#cboxClose{
+    font-size: 0px;
+    background: white;
+    text-indent: 0px;
+    width: 35px;
+    height: 37px;
+    border-radius: 0 0 0 20%;
+}
+#cboxClose:before{
+    content:"\e088";
+    font-family:"Glyphicons Halflings";
+    font-size: 30px;
+    display:inline-block;
+    position:relative;
+    top: -6px;
+    right: -2px;
+}
+#cboxPrevious{
+    font-size: 0px;
+    bottom: 1%;
+    background: rgba(200, 54, 54, 0.0);
+    width: auto;
+    height: auto;
+    text-indent: 0px;
+}
+#cboxPrevious:before{
+    content:"\e079";
+    font-family:"Glyphicons Halflings";
+    font-size: 20px;
+    display:inline-block;
+}
+#cboxNext{
+    font-size: 0px;
+    bottom: 1%;
+    background: rgba(200, 54, 54, 0.0);
+    width: auto;
+    height: auto;
+    text-indent: 0px;
+}
+#cboxNext:before{
+    content:"\e080";
+    font-family:"Glyphicons Halflings";
+    font-size: 20px;
+    display:inline-block;
+}/*end colorbox*/
+
+/*end modal arrows*/
+#cboxOverlay{
+    opacity: 0.4 !important;
+}
+#cboxClose{
+    top: 0;    
+}
+#cboxOverlay{
+    background: #000000;
+}
+
+@media (max-width: 768px){
+#cboxCurrent{
+    visibility:hidden;
+}
+ #cboxPrevious{
+    background: rgba(200, 54, 54, 0.0);
+    text-indent: 0px;                    
+    bottom: 0;
+}
+#cboxPrevious:before{
+    content:"\e079";
+    font-family:"Glyphicons Halflings";
+    font-size: 45px;
+    display:inline-block;
+}
+
+#cboxNext{
+    background: rgba(200, 54, 54, 0.0);
+    text-indent: 0px;
+    bottom: 0;
+    left: inherit;
+    right: 0;
+}
+#cboxNext:before{
+    content:"\e080";
+    font-family:"Glyphicons Halflings";
+    font-size: 45px;
+    display:inline-block;
+}
+}
+
+.headerColor{
+background-color: #093C66;
+height: 45px;
+width: 2500px;
+color: white;
+text-shadow: 0 -1px 0 #888;
+font-size: 2em;
+padding: 2px 0 0px 20px;
+position: relative;
+padding-left: 500px;
+margin-left: -500px;
+} 
+
+/*Sub headings*/
+.subHeaderSmall{
+    background-color: #249E6D;
+    height: 35px;
+    width: 100%; 
+    color: white;
+    font-size: 1.5em;
+    padding: 2px 0 0px 20px;
+    position: relative;
+    margin-bottom: 10px;
+} 
+.subHeaderColorArrow{
+    display:inline-block;
+	width: 0; 
+	height: 0; 
+	border-top: 35px solid transparent;
+	border-bottom: 0px solid transparent; 
+	border-left:35px solid #7A79CA; 
+    position:absolute;
+    right: -35px;
+    bottom:0px;
+} 
+@media (max-width: 480px){
+.headerColor{
+    padding: 2px 12% 0px 0;
+    margin-left:-20px;
+    width: 120%;
+    color: white;
+    position: relative;
+    height: auto; 
+    text-align:center;
+} 
+.headerColorArrow{
+    display:none;
+} 
+}
+
+/*************************************
+*               FOOTER
+**************************************/
+.socialCenter {
+    display:inline-block;
+    float: left;
+    text-align:center;
+    font-size: .8em;
+    color: white;
+    padding-top: 30px;
+}
+footer{
+    background-color: #011323;
+    height: 150px;
+    border-top: solid 2px #093C66;
+    position: relative;
+    margin-top: 53px;
+}
+
+.glyphFont{
+    font-size: 5em;
+    color: white;
+    text-shadow: 0 2px 0 #888;
+    position: absolute;
+    z-index: 3;
+    bottom: 85px;
+    right: 46px;
+    cursor: pointer;
+    }
+
+.glyphFontCircle{
+    background-color: #011323;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    bottom: 85px;
+    border: solid 2px #093C66;
+}
+.glyphFontColor{
+    width: 116px;
+    height: 10px;
+    position: absolute;
+    z-index: 2;
+    right: 22px;
+    bottom: 143px;
+    background-color: #011323;
+}
+.glyphFontColor2{
+    width: 121px;
+    height: 70px;
+    position: relative;
+    right: 3px;
+    bottom: -5px;
+    background-color: #011323;
+}
+.glyphicon.glyphicon-chevron-up{
+    cursor:pointer;
+    padding: 0 5px 0 10px;
+}
