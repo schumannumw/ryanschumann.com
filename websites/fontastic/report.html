@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="fontastic.css" />
+    	<link rel="stylesheet" href="fonts.css" />
+        <script>
+            function genReports() {
+                var reportList = document.getElementById('reportList');
+                reportList.style.width = '100%';
+                var userAnswers = localStorage.userAnswers;
+                for (var i = 0; i < fonts.length; i++) {
+                    if (userAnswers[i] == 'correct') {
+                        //dont show
+                        continue;
+                    }
+                    else {
+                        var li = document.createElement('li');
+                        li.innerText = userAnswers[i];
+                        reportList.appendChild(li);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body onload="genReports();">
+        <header>
+            <input type="text" id="fontPreview" placeholder="Font Preview"/>
+        </header>
+        <div id="main">
+            <h1>End of Flash-Cards</h1>
+            <h2>Fonts You Need To Work On</h2>
+            <ul id="reportList"></ul>
+        </div>
+    </body>
+</html>

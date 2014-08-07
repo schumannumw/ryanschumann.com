@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="fontastic.css" />
+		<link rel="stylesheet" href="fonts.css" />
+        <script type="text/javascript" src="fontastic_syncing.js"></script>
+
+    </head>
+    <body onload="initSeq();setFlashCard();">
+        <header>
+            <input type="text" id="fontPreview" placeholder="Font Preview"/>
+        </header>
+        <div id="main">
+            <div class="button" onclick="checkAnswer(this);"><span>Font Name</span></div>
+            <div class="button" onclick="checkAnswer(this);"><span>Font Name</span></div>
+            <div class="button" onclick="checkAnswer(this);"><span>Font Name</span></div>
+            <div class="button" onclick="checkAnswer(this);"><span>Font Name</span></div>
+            <div id="footer">
+                <div id="progress"></div>
+            </div>
+        </div>
+        <div id="response">
+            <div id="response-image"><img src="#"/></div>
+            <div id="response-text"></div>
+            <div id="response-button"></div>
+        </div>
+    </body>
+</html>

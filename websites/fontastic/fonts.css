@@ -1,0 +1,64 @@
+@font-face { font-family: Adobe Caslon;
+src: url('fonts/ACaslonPro-Regular.otf'); }
+@font-face { font-family: Adobe Garamond;
+src: url('fonts/AGaramondPro-Semibold.otf'); }
+@font-face { font-family: Adobe Jenson;
+src: url('fonts/AJensonPro-Lt.otf'); }
+@font-face { font-family: Avenir;
+src: url('fonts/AvenirLTStd-Book.otf'); }
+@font-face { font-family: Baskerville;
+src: url('fonts/BaskervilleCyrLTStd-Upright.otf'); }
+@font-face { font-family: Bell;
+src: url('fonts/BellMTStd-Regular.otf'); }
+@font-face { font-family: Bembo;
+src: url('fonts/BemboStd-Semibold.otf'); }
+@font-face { font-family: Bodoni;
+src: url('fonts/BodoniStd.otf'); }
+@font-face { font-family: Centaur Regular;
+src: url('fonts/CentaurMTStd-Italic.otf'); }
+@font-face { font-family: ITC Cheltenham Book;
+src: url('fonts/CheltenhamStd-Book.otf'); }
+@font-face { font-family: Clarendon Light;
+src: url('fonts/ClarendonLTStd.otf'); }
+@font-face { font-family: ITC Fenice Regular;
+src: url('fonts/FeniceStd-Regular.otf'); }
+@font-face { font-family: Frutiger-55;
+src: url('fonts/FrutigerLTStd-Cn.otf'); }
+@font-face { font-family: Gill Sans;
+src: url('fonts/GillSansStd.otf'); }
+@font-face { font-family: Goudy Oldstyle;
+src: url('fonts/GoudyStd.otf'); }
+@font-face { font-family: Helvetica Regular Roman;
+src: url('fonts/HelveticaLTStd-Roman.otf'); }
+@font-face { font-family: ITC Avant Garde Gothic Book;
+src: url('fonts/ITCAvantGardeStd-Bk.otf'); }
+@font-face { font-family: ITC Franklin Gothic Book;
+src: url('fonts/ITCFranklinGothicStd-MdCd.otf'); }
+@font-face { font-family: Melior;
+src: url('fonts/MeliorLTStd.otf'); }
+@font-face { font-family: Memphis Medium;
+src: url('fonts/MemphisLTStd-Medium.otf'); }
+@font-face { font-family: Minion;
+src: url('fonts/MinionStd-Black.otf'); }
+@font-face { font-family: Myriad;
+src: url('fonts/MyriadStd-Tilt.otf'); }
+@font-face { font-family: New Century Schoolbook;
+src: url('fonts/NewCenturySchlbkLTStd-Roman.otf'); }
+@font-face { font-family: Palatino;
+src: url('fonts/PalatinoLTStd-Medium.otf'); }
+@font-face { font-family: Rockwell;
+src: url('fonts/RockwellStd.otf'); }
+@font-face { font-family: Sabon Roman;
+src: url('fonts/SabonLTStd-Roman.otf'); }
+@font-face { font-family: Scala Sans Pro Regular;
+src: url('fonts/ScalaSansPro-Regular.otf'); }
+@font-face { font-family: Syntax;
+src: url('fonts/SyntaxLTStd-Roman.otf'); }
+@font-face { font-family: Times New Roman;
+src: url('fonts/TimesNewRomanMTStd.otf'); }
+@font-face { font-family: Trade Gothic;
+src: url('fonts/TradeGothicLTStd.otf'); }
+@font-face { font-family: Univers-55;
+src: url('fonts/UniversLTStd.otf'); }
+
+

@@ -1,0 +1,345 @@
+/* 
+    Document   : hscreen
+    Created on : Nov 11, 2011, 9:30:25 AM
+    Author     : schumannart
+   Description:
+        Style all screen user agents
+
+ ++++ CSS Selectors +++++
+Class selector = .name - use in a web page multiple times
+ID selector = #name - use in a web once only per page
+Element selector = p or body or header
+Attribute selector = img[src="logo.jpg"]
+Pseudo-class selector = a:hover or body p:nth-child[1]
+Context selector = body div p a
+*/
+
+header{
+/*    width:100%;
+    height: 100%;*/
+    padding: 3px;
+    text-align: center;/*
+    font-size:12px;*/
+    background-image: url("../images/header/header3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.page_header{
+
+}  
+h1 {
+    font-family:arial, sans-serif;
+    font-size: 40px
+}
+h3 {
+    text-align: center;
+    font-family:arial, sans-serif;
+    font-size: 20px
+}
+
+body{
+ font-family: arial, helvetica, 'times new roman', sans-serif;
+ font-size: 16px;
+}
+.front{
+width:400px;
+height:400px;
+margin-top: 40px;
+margin-left: 300px;
+margin-bottom: 20px;
+}
+
+
+.fronttext {
+    position: absolute; left: 20px; top: 30px;
+    width: 270px;
+    margin: 10px;
+}
+.support {
+/*    text-align: center;*/
+    width: 300px;
+    margin: 15px;
+}
+.support p {
+}
+/*This is for the page content*/
+#content {
+  width:270px;
+  padding-left: 10px;
+  padding-top:35px;
+  padding-bottom:10px;
+}
+
+
+#mega-wrap {
+    height: 100%;/*
+*/    left: -10px;
+    margin: auto;
+    position: relative;
+    width: 700px;
+/*    background-color: blue;*/
+}
+.thumbnail 
+{
+width:200px;
+height:200px;
+margin:10px;
+margin-bottom: 20px;
+opacity:1;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+
+/*this is for the border*/
+border:2px black;
+border-style:double;
+border-width:4px;
+background:white;
+/*This makes rounded edges*/
+/*border-radius:15px;*/
+-moz-border-radius:4px; /* Firefox 3.6 and earlier */
+}
+
+.thumbnail:hover
+{
+opacity:.6;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+  
+.pastthumbnail 
+{
+width:320px;
+height:320px;
+margin:10px;
+margin-bottom: 20px;
+opacity:1;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+
+/*this is for the border*/
+border:1px black;
+border-style: solid;
+border-width:2px;
+/*background:white;*/
+/*This makes rounded edges*/
+/*border-radius:15px;*/
+-moz-border-radius:4px; /* Firefox 3.6 and earlier */
+}
+
+.pastthumbnail:hover
+{
+/*opacity:.6;
+filter:alpha(opacity=100);  For IE8 and earlier */
+}
+
+.view {
+width: 250px;
+height: auto;	
+padding: 20px;
+border:2px black;
+border-style:solid;
+border-width:1px;
+/*This makes rounded edges*/
+/*border-radius:15px;*/
+-moz-border-radius:4px; /* Firefox 3.6 and earlier */
+    }
+
+/*This is for the footer*/
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+        background: rgb(255,255,255); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjFmMWYxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjZTFlMWUxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(241,241,241,1) 0%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(0%,rgba(241,241,241,1)), color-stop(51%,rgba(225,225,225,1)), color-stop(100%,rgba(246,246,246,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 0%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 0%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 0%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 0%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-8 */
+
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -70px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+	height: 70px; /* .push must be the same height as .footer */
+}
+/*
+
+Sticky Footer by Ryan Fait for more info go to this tutorial:
+http://ryanfait.com/resources/footer-stick-to-bottom-of-page/
+*/
+/*stuff im adding to his footer*/
+footer {
+/*    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+
+    text-align: center;
+     font-size:12px;
+    background-image: url("../images/footer/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+/*    background-color: red;*/
+}
+
+
+
+/*Navigation*/
+
+.cssmenu{
+/*    font-family: rockwell;*/
+    left: -13px;
+/*    letter-spacing: 4px;*/
+    position: relative;
+    text-align: center;
+/*    word-spacing: 15px;*/
+      color: black;
+/*      background-color: white;*/
+}
+
+.cssmenu li {
+    display: inline;
+	margin:5px;
+	padding:5px;
+}
+.cssmenu li a {
+    color: black;
+    text-decoration: none;
+}
+.cssmenu li a:hover
+{	
+	color: darkgray;
+	height:22px;		
+}
+
+/*---------This is for the form----------*/
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+
+/* This section centers our complete page */
+.main {
+    display:block;
+    margin:0 auto;
+    width:500px;
+}
+
+/* This section centers the form inside our web page*/
+form {
+    margin:0 auto;
+    width:420px;
+}
+
+#paypal input, textarea{
+    height: auto;
+    width: 130px;
+    border: none;
+    margin-left: -100px;
+}
+
+/* Applying styles to our text boxes */
+input, textarea {
+	width:400px;
+	height:27px;
+        background:white;
+	border:1px solid gray;
+	padding:5px;
+	margin-top:10px;
+	font-size:1em;
+	color: black;
+}
+
+textarea {
+	height:200px;
+	font-family:Arial;
+}
+
+/*#submit {
+    width:85px;
+    height:35px;
+    background:url(submit.png);
+    text-indent:-9999px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}*/
+
+#submit {
+        width:85px;
+      height:35px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}#submit:hover {
+     cursor:pointer;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}#submit:active {
+	position:relative;
+	top:1px;
+}
+
+/*-------------This is for the Table------------*/
+.datagrid table {
+    border-collapse: collapse; 
+    text-align: left; width: 100%; 
+}
+.datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 3px solid #991821; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }.datagrid table td,
+.datagrid table th { 
+    padding: 6px 10px; 
+}
+
+.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #991821), color-stop(1, #80141C) );background:-moz-linear-gradient( center top, #991821 5%, #80141C 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#991821', endColorstr='#80141C');background-color:#991821; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #B01C26; }
+
+.datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #000000; border-left: 1px solid #F7CDCD;font-size: 13px;font-weight: normal; }.datagrid table tbody .alt td { background: #F7CDCD; color: #000000; }.datagrid table tbody td:first-child { border: none; }
+
+/*----------This is for the caption-------------*/
+/*figure{
+ width: 30%;
+ margin: 1.0582011%;
+ position: relative;
+ float: left;
+}
+
+
+figcaption{
+ height: 1em;
+ position: absolute;
+ bottom: 6px;
+ left: 0;
+ font-size: 60%;
+background-color: rgba(255, 255, 255, .5);
+ color: #000;
+ min-width: 100%;
+ text-align: center;
+}
+
+figure img{
+ max-width: 100%;
+ min-width: 100%;
+}*/
